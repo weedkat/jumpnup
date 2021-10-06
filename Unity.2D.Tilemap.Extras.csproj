@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{90453176-1A7C-EEDC-CF1A-358CC5E07D86}</ProjectGuid>
+    <ProjectGuid>{F9232E8B-AC80-0C3E-2382-7C2B58FEE393}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Tilemap.Extras</AssemblyName>
@@ -53,21 +53,18 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\RuleTile\RuleTile.cs" />
-    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\AnimatedTile\AnimatedTile.cs" />
-    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\WeightedRandomTile\WeightedRandomTile.cs" />
+    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\RandomTile\RandomTile.cs" />
     <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\GridInformation\GridInformation.cs" />
     <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\TerrainTile\TerrainTile.cs" />
-    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Brushes\TintTextureGenerator.cs" />
     <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\PipelineTile\PipelineTile.cs" />
-    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\RuleOverrideTile\AdvancedRuleOverrideTile.cs" />
-    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\HexagonalRuleTile\HexagonalRuleTile.cs" />
-    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\IsometricRuleTile\IsometricRuleTile.cs" />
-    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\RandomTile\RandomTile.cs" />
+    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Brushes\TintTextureGenerator.cs" />
     <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\RuleOverrideTile\RuleOverrideTile.cs" />
+    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\IsometricRuleTile\IsometricRuleTile.cs" />
+    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\HexagonalRuleTile\HexagonalRuleTile.cs" />
+    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\RuleTile\RuleTile.cs" />
+    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\RuleOverrideTile\AdvancedRuleOverrideTile.cs" />
+    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\AnimatedTile\AnimatedTile.cs" />
+    <Compile Include="Packages\com.unity.2d.tilemap.extras\Runtime\Tiles\WeightedRandomTile\WeightedRandomTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.2d.tilemap.extras\Runtime\Unity.2D.Tilemap.Extras.asmdef" />
