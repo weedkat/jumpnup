@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundPoint.position, .1f, WhatIsGround);
+        isGrounded = Physics2D.OverlapCircle(groundPoint.position, .2f, WhatIsGround);
         if (isGrounded)
         {
             flyTime = flyDuration;
