@@ -79,6 +79,7 @@ MonoBehaviour:
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 128
+  canMove: 1
   state: 0
 --- !u!114 &8931088633520715380
 MonoBehaviour:

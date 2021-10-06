@@ -22,14 +22,6 @@
                     "interactions": "Hold(duration=0.1)"
                 },
                 {
-                    "name": "MousePos",
-                    "type": "Value",
-                    "id": "a6acffe9-d157-4273-8a9f-5f45d6fef99c",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "Pause",
                     "type": "Button",
                     "id": "e84cd246-8f29-4eba-86bd-e2062c14505d",
@@ -58,17 +50,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Fly",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1f9d4f65-3012-4dbd-8e11-47942b59e53e",
-                    "path": "<Mouse>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MousePos",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

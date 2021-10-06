@@ -6,6 +6,6 @@ public class HitDetector : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("hit detected");
+        FindObjectOfType<GameManager>().EndGame();
     }
 }

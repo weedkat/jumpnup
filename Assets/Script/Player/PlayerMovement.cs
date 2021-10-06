@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float flyDuration;
     public Transform groundPoint;
     public LayerMask WhatIsGround;
+    public bool canMove = true;
     private Rigidbody2D body;
     private bool isGrounded;
     private bool fly;
@@ -45,7 +46,10 @@ public class PlayerMovement : MonoBehaviour
         {
             state = PlayerState.Fall;
         }
-        body.velocity = new Vector2(1 * speed, body.velocity.y);
+        if (canMove) {
+            body.velocity = new Vector2(1 * speed, body.velocity.y);
+        }
+        
     }
     private void FixedUpdate()
     {
@@ -58,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if(context.performed && isGrounded)
+        if(context.performed && isGrounded && canMove)
         {
             state = PlayerState.Fall;
             body.velocity = new Vector2(body.velocity.x, jumpForce);
@@ -67,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Fly(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && canMove)
         {
             state = PlayerState.Jump;
             fly = true;
